@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { CiCircleMinus,CiCirclePlus } from 'react-icons/ci';
 import f1 from '/f1.svg';
 
 const FAQAccordion = () => {
@@ -49,12 +48,12 @@ const FAQAccordion = () => {
         <div className="bg-white px-10 py-4 rounded-full border-2 border-purple-500 shadow-md z-10">
           <h2 className="text-2xl md:text-3xl font-bold tracking-wider">Frequently asked <span className="text-purple-500">Questions</span></h2>
         </div>
-        <div className="absolute right-0 md:right-20 top-0">
-          <div className="relative w-64 h-64 md:w-96 md:h-96">
+        <div className=" right-0 md:right-20 top-0">
+          <div className="relative w-[195px] h-[192px] ">
             <img 
               src={f1} 
               alt="Question mark illustration" 
-              className="w-full h-full object-contain"
+              className="w-full h-full"
             />
           </div>
         </div>
@@ -73,8 +72,8 @@ const FAQAccordion = () => {
               <h3 className="text-lg font-medium">{item.question}</h3>
               <span className="text-purple-500">
                 {openItem === item.id ? 
-                  <CiCircleMinus className="w-6 h-6" /> : 
-                  <CiCirclePlus className="w-6 h-6" />
+                  <ChevronUp className="w-6 h-6" /> : 
+                  <ChevronDown className="w-6 h-6" />
                 }
               </span>
             </button>

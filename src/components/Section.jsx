@@ -10,8 +10,8 @@ export default function Section() {
     }, []);
   
     return (
-      <div className="min-h-screen bg-white  p-4 md:p-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="min-h-screen mb-10 bg-white  p-4 md:p-8">
+        <div className="max-w-7xl mx-auto relative">
           <div className="flex flex-col items-center justify-center mb-12 text-center">
             <div className="flex items-center justify-center relative w-full">
               <div className="flex text-[#9747FF] font-inter space-x-2 sm:text-xl text-3xl md:text-4xl font-bold">
@@ -25,7 +25,7 @@ export default function Section() {
           </div>
   
           <div
-            className={"grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300 ease-in-out" }
+            className={"grid relative grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300 ease-in-out" }
           >
             <div className="border-2 border-[#9747FF] rounded-4xl px-2 text-center   transition-colors duration-300">
               <h2 className="flex py-10  items-center justify-center  text-[#9747FF] text-xl font-inter font-bold">
@@ -45,7 +45,7 @@ export default function Section() {
               </h3>
             </div>
   
-            <div className="border-2 border-[#9747FF] rounded-4xl p-6 text-center  transition-colors duration-300">
+            <div className="border-2 relative border-[#9747FF] rounded-4xl p-6 text-center  transition-colors duration-300">
               <h3 className="py-8 items-center justify-center text-[#9747FF] text-xl font-inter font-bold ">
                 Multiple Payment Options
               </h3>
