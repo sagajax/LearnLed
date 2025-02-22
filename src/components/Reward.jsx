@@ -25,7 +25,7 @@ export default function Reward() {
     <div className="bg-white mt-30 mb-20">
       <div className="flex items-center justify-center space-x-2 text-4xl md:text-5xl font-bold">
         <h1 className="text-[#9747FF]">Reward</h1>
-        <h1>System Mechanism</h1>
+        <h1 className='font-light' >System Mechanism</h1>
       </div>
       
       <div className="py-24">

@@ -15,7 +15,7 @@ export default function BenefitsSection() {
           <div className="relative w-full flex justify-center mb-16">
             <div className="flex items-center font-inter text-4xl md:text-5xl font-bold">
               <h1 className="text-[#9747FF]">Benefits</h1>
-              <h1 className="text-black ml-2">of Enrollment</h1>
+              <h1 className="text-black ml-2 font-thin">of Enrollment</h1>
             </div>
             <div className="">
               <img src={ele} alt="Illustration" className="h-64 " />
