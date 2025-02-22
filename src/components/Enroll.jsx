@@ -77,7 +77,7 @@ export default function Enroll() {
                     <img
                       src={item.image}
                       alt=""
-                      className="w-[80px] h-[80px] rounded-lg ml-5 mr-50 "
+                      className="w-[80px] h-[80px] rounded-lg ml-5 mr-50"
                     />
                   )}
                 </div>
