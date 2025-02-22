@@ -6,11 +6,11 @@ export default function Enroll() {
   return (
     <div className="min-h-screen bg-white  py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="flex space-x-2 text-center justify-center items-center ">
-          <h1 className="text-3xl font-inter font-bold text-black mb-12 text-center">
+        <div className="flex space-x-2 text-center justify-center items-center mb-5">
+          <h1 className="text-5xl font-inter font-light text-black mb-12 text-center">
             User
           </h1>
-          <h1 className="text-3xl font-inter font-bold text-[#9747FF] mb-12 text-center">
+          <h1 className="text-5xl font-inter font-semibold text-[#9747FF] mb-12 text-center">
             Enrollment
           </h1>
         </div>
@@ -52,19 +52,19 @@ export default function Enroll() {
             <div key={item.step} className="relative last:mb-0">
               <div className={`w-full flex items-center`}>
                 <div
-                  className={`flex  items-center justify-between w-full  ${
+                  className={`flex items-center justify-between w-full  ${
                     index % 2 === 0
                       ? "justify-start pl-20"
                       : "justify-end pr-20"
                   } `}
                 >
                   <div
-                    className={`flex flex-col rounded-2xl bg-[#d0c9f8]  py-10 px-10 w-[calc(60%-20px)]   `}
+                    className={`flex flex-col rounded-4xl bg-[#f1eeff]  justify-center px-5 w-[340px]  shadow-lg hover:bg-[#e3defa] transition-all duration-500 h-[120px]`}
                   >
                     <div className="flex justify-center items-center text-center  w-8 h-8 bg-[#9747FF] text-white font-inter rounded-full ">
                       {item.step}
                     </div>
-                    <h3 className=" text-lg font-inter font-semibold text-[#9747FF]">
+                    <h3 className=" text-lg font-inter font-semibold text-black">
                       {item.title}
                     </h3>
                     {item.subtitle && (
@@ -77,7 +77,7 @@ export default function Enroll() {
                     <img
                       src={item.image}
                       alt=""
-                      className="w-[126px] h-[126px] rounded-lg ml-auto mr-20 "
+                      className="w-[80px] h-[80px] rounded-lg ml-5 mr-50 "
                     />
                   )}
                 </div>

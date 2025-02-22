@@ -13,8 +13,7 @@ function App() {
 
 
   return (
-    <>
-      <Navbar />
+    <div className='w-full h-auto flex flex-col overflow-scroll no-scrollbar items-center'> 
       <Hero />
       <Partner />
       <Roadmap />
@@ -23,7 +22,7 @@ function App() {
       <Reward />
       <Faq />
       <Footer />
-          </>
+    </div>
   )
 }
 
