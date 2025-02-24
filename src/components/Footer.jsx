@@ -19,10 +19,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Top section with logo and info */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-start">
-          {/* Logo and description */}
+      {/* Top section with logo, contact info, and newsletter */}
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex flex-col md:flex-row justify-between">
+          {/* Logo and description - Left side */}
           <div className="mb-8 md:mb-0 md:w-1/3">
             <div className="flex items-center mb-2">
               <img src={Logo} alt="Learn Ledger Logo" className="h-10 w-10 mr-2" />
@@ -37,50 +37,55 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact Info */}
-          <div className="flex flex-col md:flex-row md:space-x-10 md:items-start">
-            <div className="flex items-center mb-4 md:mb-0">
-              <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-              </svg>
-              <span className="ml-2 text-gray-400">Location</span>
+          {/* Right side - Contact Info and Newsletter */}
+          <div className="md:w-2/3 md:flex md:flex-col md:items-end">
+            {/* Contact Info */}
+            <div className="flex flex-col md:flex-row md:justify-end md:space-x-8 mb-8">
+              <div className="flex items-center mb-4 md:mb-0">
+                <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <span className="ml-2 text-gray-400">Location</span>
+              </div>
+              
+              <div className="flex items-center mb-4 md:mb-0">
+                <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <span className="ml-2 text-gray-400">mail@gmail.com</span>
+              </div>
+              
+              <div className="flex items-center">
+                <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span className="ml-2 text-gray-400">+91 1234567890</span>
+              </div>
             </div>
-            
-            <div className="flex items-center mb-4 md:mb-0">
-              <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-              <span className="ml-2 text-gray-400">mail@gmail.com</span>
-            </div>
-            
-            <div className="flex items-center">
-              <svg className="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-              </svg>
-              <span className="ml-2 text-gray-400">+91 1234567890</span>
+
+            {/* Newsletter Section */}
+            <div className="md:flex md:items-center">
+              <h3 className="text-base font-medium mr-4 mb-2 md:mb-0">Subscribe to our newsletter</h3>
+              <div className="flex">
+                <input 
+                  type="email" 
+                  placeholder="Input your email" 
+                  className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-64 focus:outline-none"
+                />
+                <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-r-md transition-colors">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Newsletter Section */}
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
-          <h3 className="text-lg font-semibold mb-4 md:mb-0">Subscribe to our newsletter</h3>
-          <div className="flex w-full md:w-auto">
-            <input 
-              type="email" 
-              placeholder="Input your email" 
-              className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full md:w-64 focus:outline-none"
-            />
-            <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-r-md transition-colors">
-              Subscribe
-            </button>
-          </div>
-        </div>
-
-        {/* Navigation Links */}
-        <div className="mt-12">
-          <nav className="flex flex-wrap justify-center gap-6">
+      {/* Main navigation */}
+      <div className="border-t border-gray-800 py-4">
+        <div className="container mx-auto px-4">
+          <nav className="flex flex-wrap justify-center space-x-6">
             {navigationLinks.map((link) => (
               <a 
                 key={link.name} 
@@ -92,22 +97,32 @@ export default function Footer() {
             ))}
           </nav>
         </div>
+      </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-800 my-8"></div>
-
-        {/* Bottom Section with Copyright and Social */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+      {/* Bottom Section with Copyright and Social */}
+      <div className="border-t border-gray-800 py-4">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          {/* Language selector on left */}
+          <div className="mb-4 md:mb-0 order-2 md:order-1">
+            <select className="bg-gray-800 text-white border border-gray-700 rounded px-2 py-1 text-sm">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+            </select>
+          </div>
+          
+          {/* Copyright centered */}
+          <p className="text-gray-400 text-sm mb-4 md:mb-0 order-1 md:order-2">
             © 2025 Learn Leadger Limited. All Rights Reserved.
           </p>
           
-          <div className="flex space-x-4">
+          {/* Social icons on right */}
+          <div className="flex space-x-4 order-3">
             {socialIcons.map((social) => (
               <a 
                 key={social.name} 
                 href={social.href}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-blue-400 hover:text-white transition-colors"
                 aria-label={social.name}
               >
                 {social.icon === "twitter" && (
@@ -132,19 +147,6 @@ export default function Footer() {
                 )}
               </a>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Language Selector */}
-      <div className="bg-gray-900 border-t border-gray-800 py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            <select className="bg-gray-800 text-white border border-gray-700 rounded px-2 py-1 text-sm">
-              <option value="en">English</option>
-              <option value="hi">Hindi</option>
-              <option value="fr">Français</option>
-            </select>
           </div>
         </div>
       </div>
