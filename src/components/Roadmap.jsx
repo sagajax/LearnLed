@@ -48,14 +48,14 @@ export default function Roadmap() {
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white p-8">
       <div className="w-full max-w-3xl">
-        <div className="text-center mb-8">
+        <div className="text-center mb-20">
           <h1 className="text-4xl font-medium">
             Roadmap for <span className="text-purple-500 font-semibold">Token Exchanging</span>
           </h1>
           <p className="text-gray-600 mt-2">Your Guide to Our Milestones.</p>
         </div>
 
-        <div >
+        <div className="item">
           {roadmapItems.map((item, index) => (
             <div key={item.id} className="flex items-start">
               <div className="flex flex-col items-center">
