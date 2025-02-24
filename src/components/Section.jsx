@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react"; 
-import ele from '/ele.svg';  
+import { useState, useEffect } from "react";
+import ele from '/ele.svg';
+import Circles from "./Circles";
 
 export default function BenefitsSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -24,34 +25,38 @@ export default function BenefitsSection() {
         
         <div className={`transition-all duration-300 ease-in-out max-w-4xl mx-auto ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
           <div className="relative flex flex-col gap-4">
-           
+            
+            {/* Center circles - positioned absolutely */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+              
+            </div>
+            
             <div className="flex gap-4">
-             
-              <div className="w-1/2 relative overflow-hidden">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
                   <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
                     Flexible payment<br />methods
                   </h3>
                 </div>
+                <Circles classN="-bottom-30 -right-25" />
               </div>
-             
-              <div className="w-1/2 relative overflow-hidden">
+              
+              <div className="w-1/2 relative overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
                   <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
                     Reward based learning
                   </h3>
                 </div>
+              <Circles classN="-bottom-30 -left-25" />
               </div>
             </div>
             
             <div className="flex gap-4">
-              <div className="w-1/2 relative overflow-hidden">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
@@ -59,9 +64,10 @@ export default function BenefitsSection() {
                     Immutable<br />certifications
                   </h3>
                 </div>
+                <Circles classN="-top-30 -right-25" />
               </div>
               
-              <div className="w-1/2 relative overflow-hidden">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
@@ -69,6 +75,7 @@ export default function BenefitsSection() {
                     Anonymous login<br />through web3 wallet
                   </h3>
                 </div>
+                <Circles classN="-top-30 -left-25" />
               </div>
             </div>
           </div>
