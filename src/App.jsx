@@ -15,12 +15,12 @@ function App() {
       <div className="relative overflow-x-hidden">
         <Hero />
         <Partner />
-        <Roadmap />
         <Enroll />
         <Section />
-        <div className="absolute -right-24 mt-5 w-[200px] h-[700px]  bg-[#CECDFF] blur-[100px] transform -translate-y-1/2 scale-x-150 scale-y-75 rounded-full z-0">
+        {/* <div className="absolute -right-24 mt-5 w-[200px] h-[700px]  bg-[#CECDFF] blur-[100px] transform -translate-y-1/2 scale-x-150 scale-y-75 rounded-full z-0">
         </div>
-        <Reward />
+        <Reward /> */}
+        <Roadmap />
         <Faq />
         <Footer />
       </div>
