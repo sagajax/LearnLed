@@ -13,7 +13,7 @@ const FAQAccordion = () => {
     },
     {
       id: 'virtual',
-      question: 'How do virtual classrooms work?',
+      question: 'How do virtual classes work?',
       answer: 'Virtual classrooms provide an interactive online learning environment where you can attend live sessions, collaborate with peers, access recorded lectures, submit assignments, and receive feedback from instructors in real-time.'
     },
     {
@@ -23,7 +23,7 @@ const FAQAccordion = () => {
     },
     {
       id: 'progress',
-      question: 'How do you track learning progress?',
+      question: 'How do you track learning process?',
       answer: 'We use comprehensive analytics to monitor your engagement, completion rates, assessment scores, and learning patterns. You can view personalized dashboards with visual progress indicators and receive regular performance reports.'
     },
     {
@@ -43,13 +43,13 @@ const FAQAccordion = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 bg-white rounded-lg">
-      <div className="flex justify-center items-center mb-12 relative">
-        <div className="bg-white px-10 py-4 rounded-full border-2 border-purple-500 shadow-md z-10">
-          <h2 className="text-2xl md:text-3xl font-medium tracking-wider font-['Objectivity']">Frequently asked <span className="text-[#9747FF] font-bold font-['Objectivity']">Questions</span></h2>
+    <div className="w-full max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg">
+      <div className="flex flex-row items-center mb-8 relative">
+        <div className="bg-white px-6 py-3 rounded-full border-2 border-purple-500 shadow-md z-10 mr-4">
+          <h2 className="text-xl md:text-2xl font-medium tracking-wider font-['Objectivity']">Frequently asked <span className="text-[#9747FF] font-bold font-['Objectivity']">Questions</span></h2>
         </div>
-        <div className="right-0 md:right-20 top-0">
-          <div className="relative w-[195px] h-[192px]">
+        <div className="flex-shrink-0">
+          <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
             <img 
               src={f1} 
               alt="Question mark illustration" 
@@ -59,7 +59,7 @@ const FAQAccordion = () => {
         </div>
       </div>
 
-      <div className="space-y-4 bg-[#F5EEFF] rounded-lg p-4 shadow-xl">
+      <div className="space-y-2 bg-[#F5EEFF] rounded-lg p-4 shadow-xl">
         {faqItems.map((item) => (
           <div 
             key={item.id}
@@ -67,20 +67,20 @@ const FAQAccordion = () => {
           >
             <button
               onClick={() => toggleItem(item.id)}
-              className="w-full flex justify-between items-center py-4 text-left focus:outline-none"
+              className="w-full flex justify-between items-center py-3 text-left focus:outline-none"
             >
-              <h3 className="text-lg font-bold text-black font-['Objectivity']">{item.question}</h3>
+              <h3 className="text-base md:text-lg font-bold text-black font-['Objectivity']">{item.question}</h3>
               <span className="text-[#9747FF]">
                 {openItem === item.id ? 
-                  <ChevronUp className="w-6 h-6" /> : 
-                  <ChevronDown className="w-6 h-6" />
+                  <ChevronUp className="w-5 h-5" /> : 
+                  <ChevronDown className="w-5 h-5" />
                 }
               </span>
             </button>
             
             {openItem === item.id && (
-              <div className="pb-4 text-[#667085]">
-                <p>{item.answer}</p>
+              <div className="pb-3 text-[#667085]">
+                <p className="text-sm md:text-base">{item.answer}</p>
               </div>
             )}
           </div>
