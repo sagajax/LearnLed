@@ -32,22 +32,22 @@ export default function BenefitsSection() {
             </div>
             
             <div className="flex gap-4">
-              <div className="w-1/2 relative overflow-hidden rounded-3xl">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:bg-purple-200 group">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
-                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
+                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center group-hover:scale-105 transition-transform duration-300">
                     Flexible payment<br />methods
                   </h3>
                 </div>
                 <Circles classN="-bottom-30 -right-25" />
               </div>
               
-              <div className="w-1/2 relative overflow-hidden rounded-3xl">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:bg-purple-200 group">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
-                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
+                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center group-hover:scale-105 transition-transform duration-300">
                     Reward based learning
                   </h3>
                 </div>
@@ -56,22 +56,22 @@ export default function BenefitsSection() {
             </div>
             
             <div className="flex gap-4">
-              <div className="w-1/2 relative overflow-hidden rounded-3xl">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:bg-purple-200 group">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
-                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
+                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center group-hover:scale-105 transition-transform duration-300">
                     Immutable<br />certifications
                   </h3>
                 </div>
                 <Circles classN="-top-30 -right-25" />
               </div>
               
-              <div className="w-1/2 relative overflow-hidden rounded-3xl">
+              <div className="w-1/2 relative overflow-hidden rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 hover:bg-purple-200 group">
                 <div className="absolute inset-0 bg-purple-100 rounded-3xl"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-purple-200 opacity-70 rounded-3xl group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-6 flex items-center justify-center min-h-48 rounded-3xl">
-                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center">
+                  <h3 className="text-purple-600 text-3xl md:text-4xl font-bold text-center group-hover:scale-105 transition-transform duration-300">
                     Anonymous login<br />through web3 wallet
                   </h3>
                 </div>
