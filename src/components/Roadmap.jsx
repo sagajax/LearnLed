@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MobRoadmap from "./MobRoadmap";
 
 export default function Roadmap() {
   const [roadmapItems] = useState([
@@ -46,7 +47,9 @@ export default function Roadmap() {
   ]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-white p-8">
+    <>
+
+    <div className="hidden md:block w-full flex flex-col items-center justify-center bg-white p-8">
       <div className="w-full max-w-3xl">
         <div className="text-center mb-20">
           <h1 className="text-4xl font-medium">
@@ -82,5 +85,9 @@ export default function Roadmap() {
         </div>
       </div>
     </div>
+
+    {/* Mobile View */}
+    <MobRoadmap />
+    </>
   );
 }

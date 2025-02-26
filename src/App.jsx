@@ -15,12 +15,12 @@ function App() {
       <div className="relative w-full">
         <Hero />
         <Partner />
+        <Roadmap /> 
         <Enroll />
         <Section />
         {/* <div className="absolute -right-24 mt-5 w-[200px] h-[700px]  bg-[#CECDFF] blur-[100px] transform -translate-y-1/2 scale-x-150 scale-y-75 rounded-full z-0">
         </div>
         <Reward /> */}
-        <Roadmap />
         <Faq />
         <Footer />
       </div>

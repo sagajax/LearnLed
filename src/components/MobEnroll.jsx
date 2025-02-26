@@ -39,7 +39,7 @@ const MobEnroll = () => {
               </p>
             </div>
           </div>
-          <div className="relative left-65 -top-[20px] transform -translate-y-1/2">
+          <div className="relative left-65 -top-[20px] transform -translate-y-1/2  w-[40px] border">
             <img src={i1} alt="Book icon" className="w-[40px] h-[40px] " />
           </div>
         </div>
