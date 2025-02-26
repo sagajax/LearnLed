@@ -24,14 +24,17 @@ export default function Enroll() {
       </div>
       
       <div className="max-w-4xl mx-auto">
-        <div className="flex space-x-2 text-center justify-center items-center mb-5">
-          <h1 className="text-5xl font-inter font-light text-black mb-12 text-center">
-            USER
-          </h1>
-          <h1 className="text-5xl font-inter font-semibold text-[#9747FF] mb-12 text-center">
-            ENROLLMENT
-          </h1>
-        </div>
+      <div className="flex flex-col items-center justify-center mb-5">
+      <div className="flex space-x-2 text-center justify-center items-center">
+        <h1 className="text-5xl font-inter font-light text-black mb-12 text-center ">
+          USER
+        </h1>
+        <h1 className="text-5xl font-inter font-semibold text-[#9747FF] mb-12 text-center">
+          ENROLLMENT
+        </h1>
+      </div>
+      <div className="w-48 h-1 bg-[#9747FF] -mt-10 rounded-full"></div>
+    </div>
         
         <div className="relative flex flex-col gap-6">
           {/* Step 1 */}

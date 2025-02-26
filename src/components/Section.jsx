@@ -14,18 +14,21 @@ export default function BenefitsSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
-          <h1 className="font-inter text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
-            <span className="text-purple-500">Benefits</span>
-            <span className="text-black ml-2 font-thin">of Enrollment</span>
-          </h1>
-          <div className="hidden sm:block sm:ml-4 sm:mt-0">
-            <img
-              src={ele}
-              alt="Illustration"
-              className="h-16 sm:h-32 md:h-64"
-            />
-          </div>
-        </div>
+      <div className="flex flex-col items-center">
+        <h1 className="font-inter text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
+          <span className="text-purple-500">Benefits</span>
+          <span className="text-black ml-2 font-thin">of Enrollment</span>
+        </h1>
+        <div className="w-32 sm:w-40 md:w-48 h-1 bg-purple-500 mt-2 rounded-full"></div>
+      </div>
+      <div className="hidden sm:block sm:ml-4 sm:mt-0">
+        <img
+          src={ele}
+          alt="Illustration"
+          className="h-16 sm:h-32 md:h-64"
+        />
+      </div>
+    </div>
 
         <div
           className={`transition-all duration-300 ease-in-out max-w-4xl mx-auto ${

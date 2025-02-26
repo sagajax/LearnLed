@@ -18,12 +18,12 @@ const MobRoadmap = () => {
         />
       </div>
       
-      <div className="mb-4 sm:mb-6">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-1">
-          Road Map for <span className="text-purple-600">Token Exchange</span>
-        </h2>
-        <div className="w-32 sm:w-40 md:w-48 h-0.5 bg-purple-600"></div>
-      </div>
+      <div className="mb-4 sm:mb-6 flex flex-col items-center text-center">
+      <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-1">
+        Road Map for <span className="text-purple-600">Token Exchange</span>
+      </h2>
+      <div className="w-32 sm:w-40 md:w-48 h-1 rounded-full bg-purple-600"></div>
+    </div>
 
       <div className="relative z-10">
         {/* Item 1 */}

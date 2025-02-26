@@ -11,14 +11,17 @@ const MobEnroll = () => {
   return (
 
     <div className="w-full min-w-[300px] p-2 sm:p-4 relative">
-        <div className="flex space-x-2 text-center justify-center items-center mb-5">
-          <h1 className="text-2xl font-inter font-light text-black mb-5 text-center">
-            USER
-          </h1>
-          <h1 className="text-2xl font-inter font-semibold text-[#9747FF] mb-5 text-center">
-            ENROLLMENT
-          </h1>
-        </div>
+       <div className="flex flex-col items-center justify-center mb-5">
+      <div className="flex space-x-2 text-center justify-center items-center">
+        <h1 className="text-2xl font-inter font-light text-black mb-5 text-center">
+          USER
+        </h1>
+        <h1 className="text-2xl font-inter font-semibold text-[#9747FF] mb-5 text-center">
+          ENROLLMENT
+        </h1>
+      </div>
+      <div className="w-36 h-0.5 bg-[#9747FF] -mt-4 rounded-full"></div>
+    </div>
       <div className="relative">
         {/* Step 1 */}
         <div className="mb-10 sm:mb-20 relative">

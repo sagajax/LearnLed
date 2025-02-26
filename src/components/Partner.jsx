@@ -16,10 +16,13 @@ export default function Partner() {
   return (
     <div className="bg-white mt-10 px-4 md:px-0">
       {/* Title section - kept as in your original */}
-      <div className="flex items-center justify-center space-x-2 ">
+      <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center space-x-2">
         <h1 className="text-3xl md:text-5xl font-light">Our</h1>
-        <h1 className="text-[#9747FF] text-3xl md:text-5xl font-semibold">Partners</h1>
+        <h1 className="text-purple-600 text-3xl md:text-5xl font-semibold">Partners</h1>
       </div>
+      <div className="h-1 w-32 bg-purple-600 mt-2 rounded-full"></div>
+    </div>
       
       {/* Desktop: Marquee / Mobile: Grid layout */}
       <div className="py-6 md:py-10">
