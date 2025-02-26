@@ -2,10 +2,12 @@ import { useState } from "react";
 import h1 from '/h1.svg';
 import h2 from '/h2.svg';
 import Navbar from "./Navbar";
+import MobHero from "./MobHero";
 
 export default function Hero() {
   return (
-    <div className="flex h-auto flex-col bg-white w-full">
+    <>
+    <div className="flex h-auto flex-col bg-white w-full hidden md:block">
       <Navbar />
       <div className="container mx-auto px-12 py-8 md:py-6 mt-10">
         {/* Desktop View */}
@@ -88,5 +90,9 @@ export default function Hero() {
         </div>
       </div>
     </div>
+    <div className="md:hidden">
+      <MobHero />
+    </div>
+    </>
   );
 }
