@@ -2,10 +2,12 @@ import React from 'react';
 import climb from "/e1.svg";
 import video from "/video.svg";
 import pi from "/pi.svg";
+import MobEnroll from './MobEnroll';
 
 export default function Enroll() {
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <>
+    <div className="min-h-screen hidden md:block bg-white py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Video image near top/header */}
       <div className="absolute right-80 top-24">
         <img src={video} alt="Video" className="w-[170px] h-[190px]" />
@@ -141,5 +143,9 @@ export default function Enroll() {
         </div>
       </div>
     </div>
+    <div className='md:hidden'>
+      <MobEnroll />
+    </div>
+    </>
   );
 }
