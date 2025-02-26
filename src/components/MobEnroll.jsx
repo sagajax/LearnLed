@@ -9,7 +9,7 @@ import cert from '/cert.svg';
 
 const MobEnroll = () => {
   return (
-    <div className="w-full min-w-[300px] p-4 sm:p-6 md:p-8 relative">
+    <div className="w-full min-w-[300px] p-1 sm:p-6 md:p-8 relative">
       <div className="flex flex-col items-center justify-center mb-5">
         <div className="flex space-x-2 text-center justify-center items-center">
           <h1 className="text-2xl font-inter font-light text-black mb-5 text-center">
@@ -24,9 +24,9 @@ const MobEnroll = () => {
       
       <div className="relative max-w-md mx-auto px-4">
         {/* Step 1 */}
-        <div className="mb-16 sm:mb-20 relative">
+        <div className="mb-10  relative">
           {/* Arrow 1 - responsive sizing */}
-          <div className="absolute" style={{ top: '60%', left: '5%', height: '25vw', minHeight: '70px', maxHeight: '120px', zIndex: 0 }}>
+          <div className="absolute" style={{ top: '45%', left: '1%', height: '25vw', minHeight: '70px', maxHeight: '120px', zIndex: 0 }}>
             <img src={v1} alt="Arrow from step 1 to 2" className="h-full" />
           </div>
           
@@ -96,7 +96,7 @@ const MobEnroll = () => {
               </p>
             </div>
           </div>
-          <div className="absolute right-4 -bottom-5">
+          <div className="absolute right-0 -bottom-16">
             <img src={ele} alt="Educator illustration" className="w-[116px] h-[116px]" />
           </div>
         </div>
