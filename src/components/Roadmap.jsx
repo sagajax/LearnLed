@@ -87,7 +87,10 @@ export default function Roadmap() {
     </div>
 
     {/* Mobile View */}
+    <div className="md:hidden">
+
     <MobRoadmap />
+    </div>
     </>
   );
 }
