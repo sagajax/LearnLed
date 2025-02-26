@@ -11,7 +11,7 @@ import Partner from "./components/Partner";
 
 function App() {
   return (
-    <div className='w-full h-auto flex flex-col overflow-scroll no-scrollbar items-center'>
+    <div className="w-full h-auto flex flex-col overflow-scroll no-scrollbar items-center">
       <div className="relative w-full">
         <Hero />
         <Partner />
