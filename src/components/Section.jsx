@@ -10,7 +10,7 @@ export default function BenefitsSection() {
   }, []);
 
   return (
-    <div className=" bg-white p-2 sm:p-4 md:p-8 ">
+    <div className=" bg-white p-2 mb-8 sm:mb-15 sm:p-4 md:p-8 ">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="flex  sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
