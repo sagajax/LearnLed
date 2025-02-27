@@ -7,7 +7,7 @@ import MobHero from "./MobHero";
 export default function Hero() {
   return (
     <>
-    <div className="flex h-auto flex-col bg-white w-full hidden md:block">
+    <div className=" h-auto flex-col bg-white w-full hidden md:block mt-20">
       <Navbar />
       <div className="container mx-auto px-12 py-8 md:py-6 mt-10">
         {/* Desktop View */}

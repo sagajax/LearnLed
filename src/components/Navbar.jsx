@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white w-full shadow-[0_75px_150px_2px_rgba(0,0,0,0.25)] shadow-[#9747ff48] p-4">
+    <nav className="bg-white w-full shadow-[0_75px_150px_2px_rgba(0,0,0,0.25)] shadow-[#9747ff48] p-4 fixed top-0 z-[1000]">
       <div className="flex items-center justify-between">
         {/* Logo section */}
         <div className="flex items-center gap-4">
