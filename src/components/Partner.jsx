@@ -1,12 +1,12 @@
-import React from 'react';
-import Marquee from 'react-fast-marquee';
+import React from "react";
+import Marquee from "react-fast-marquee";
 // Keep your original imports
-import o1 from '/o1.png';
-import o2 from '/o2.svg';
-import o4 from '/o4.svg';
-import o5 from '/o5.png';
-import o6 from '/o6.png';
-import o7 from '/o7.svg';
+import o1 from "/o1.png";
+import o2 from "/o2.svg";
+import o4 from "/o4.svg";
+import o5 from "/o5.png";
+import o6 from "/o6.png";
+import o7 from "/o7.svg";
 
 export default function Partner() {
   // Array of your imported images
@@ -18,10 +18,12 @@ export default function Partner() {
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center space-x-2">
           <h1 className="text-3xl md:text-5xl font-light">Our</h1>
-          <h1 className="text-purple-600 text-3xl md:text-5xl font-semibold">Partners</h1>
+          <h1 className="text-purple-600 text-3xl md:text-5xl font-semibold">
+            Partners
+          </h1>
         </div>
       </div>
-      
+
       {/* Desktop: Marquee / Mobile: Grid layout */}
       <div className="py-6 md:py-10">
         {/* Hidden on mobile, visible on medium screens and up */}
@@ -32,7 +34,7 @@ export default function Partner() {
             ))}
           </Marquee>
         </div>
-        
+
         {/* Visible on mobile, hidden on medium screens and up */}
         <div className="md:hidden">
           {/* First 4 images in a 2x2 grid */}
@@ -43,10 +45,14 @@ export default function Partner() {
               </div>
             ))}
           </div>
-          
+
           {/* Last image centered */}
           <div className="flex justify-center mt-8">
-            <img src={partnerImagesMobile[4]} alt="" className="h-14 object-contain" />
+            <img
+              src={partnerImagesMobile[4]}
+              alt=""
+              className="h-14 object-contain"
+            />
           </div>
         </div>
       </div>

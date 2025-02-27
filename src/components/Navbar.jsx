@@ -16,8 +16,12 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <img src={Logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16" />
           <div className="flex flex-col">
-            <span className="text-black font-bold text-lg md:text-xl">Learn</span>
-            <span className="text-[#9747FF] font-bold text-lg md:text-xl">Ledger</span>
+            <span className="text-black font-bold text-lg md:text-xl">
+              Learn
+            </span>
+            <span className="text-[#9747FF] font-bold text-lg md:text-xl">
+              Ledger
+            </span>
           </div>
         </div>
 
@@ -46,9 +50,15 @@ export default function Navbar() {
         {/* Social Icons - Desktop */}
         <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center justify-around bg-[#eadaff] p-2 rounded-full ">
           {[FaTelegram, FaXTwitter, FaDiscord].map((Icon, index) => (
-            <div key={index} className="bg-white shadow-md  rounded-full w-10 h-10 lg:w-12 lg:h-12">
+            <div
+              key={index}
+              className="bg-white shadow-md  rounded-full w-10 h-10 lg:w-12 lg:h-12"
+            >
               <div className="flex items-center justify-center w-full h-full">
-                <a href="#" className="text-gray-600 hover:text-[#6B46C1] transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-600 hover:text-[#6B46C1] transition-colors"
+                >
                   <Icon size={24} color="#6B46C1" />
                 </a>
               </div>

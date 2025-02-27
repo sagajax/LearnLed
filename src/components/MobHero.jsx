@@ -15,8 +15,7 @@ const MobHero = () => {
           <div className="text-2xl font-bold mb-3">
             <h1>
               <span className="text-[#7BD28E]">EARN </span>
-              WHILE YOU <br></br>{" "}
-              <span className="text-[#9747FF]">LEARN!</span>
+              WHILE YOU <br></br> <span className="text-[#9747FF]">LEARN!</span>
             </h1>
           </div>
 

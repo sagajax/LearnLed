@@ -20,14 +20,14 @@ export default function Enroll() {
               </h1>
             </div>
           </div>
-          <div 
+          <div
             className="w-full select-none pointer-events-none"
             onContextMenu={(e) => e.preventDefault()}
           >
-            <img 
-              src={enroll} 
-              alt="Enrollment Illustration" 
-              className="w-full" 
+            <img
+              src={enroll}
+              alt="Enrollment Illustration"
+              className="w-full"
               draggable="false"
             />
           </div>
