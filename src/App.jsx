@@ -8,6 +8,7 @@ import Roadmap from "./components/Roadmap";
 import Enroll from "./components/Enroll";
 import Reward from "./components/Reward";
 import Partner from "./components/Partner";
+import MobRoadmap from "./components/MobRoadmap";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         {/* <div className="absolute -right-24 mt-5 w-[200px] h-[700px]  bg-[#CECDFF] blur-[100px] transform -translate-y-1/2 scale-x-150 scale-y-75 rounded-full z-0">
         </div>
         <Reward /> */}
-        <Roadmap /> 
+        <MobRoadmap /> 
         <Faq />
         <Footer />
       </div>
