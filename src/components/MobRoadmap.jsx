@@ -143,7 +143,7 @@ const Roadmap = () => {
                 </div>
 
                 {/* Climbing man - right side */}
-                <div className="w-[150px] h-64 right-0 absolute">
+                <div className="w-[150px] h-64 right-0 absolute -z-10">
                   <img
                     src={e1}
                     alt="Climbing man"
