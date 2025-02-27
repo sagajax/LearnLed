@@ -44,12 +44,13 @@ const FAQAccordion = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg">
-      <div className="flex flex-row items-center mb-8 relative">
-        <div className="bg-white px-6 py-3 rounded-full border-2 border-purple-500 shadow-md z-10 mr-4">
-          <h2 className="text-xl md:text-2xl font-medium tracking-wider ">Frequently asked <span className="text-[#9747FF] font-bold ">Questions</span></h2>
+      {/* Centered heading with illustration beside it */}
+      <div className="flex justify-center items-center mb-8 relative">
+        <div className="bg-white px-5 py-2 rounded-full border-2 border-purple-500 shadow-md z-10 mr-3">
+          <h2 className="text-lg md:text-xl font-medium tracking-wider">Frequently asked <span className="text-[#9747FF] font-bold">Questions</span></h2>
         </div>
         <div className="flex-shrink-0">
-          <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+          <div className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]">
             <img 
               src={f1} 
               alt="Question mark illustration" 
@@ -69,7 +70,7 @@ const FAQAccordion = () => {
               onClick={() => toggleItem(item.id)}
               className="w-full flex justify-between items-center py-3 text-left focus:outline-none"
             >
-              <h3 className="text-base md:text-lg font-bold text-black ">{item.question}</h3>
+              <h3 className="text-base md:text-lg font-bold text-black">{item.question}</h3>
               <span className="text-[#9747FF]">
                 {openItem === item.id ? 
                   <ChevronUp className="w-5 h-5" /> : 
