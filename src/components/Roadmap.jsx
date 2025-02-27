@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MobRoadmap from "./MobRoadmap";
-
+import road from '/road.svg';
+import mobroad from '/mobroad.svg';
 export default function Roadmap() {
   const [roadmapItems] = useState([
     {
@@ -49,47 +50,14 @@ export default function Roadmap() {
   return (
     <>
 
-    <div className="hidden md:block w-full flex flex-col items-center justify-center bg-white p-8">
-      <div className="w-full max-w-3xl">
-        <div className="text-center mb-20">
-          <h1 className="text-4xl font-medium">
-            Roadmap for <span className="text-purple-500 font-semibold">Token Exchanging</span>
-          </h1>
-          <p className="text-gray-600 mt-2">Your Guide to Our Milestones.</p>
-        </div>
-
-        <div className="item">
-          {roadmapItems.map((item, index) => (
-            <div key={item.id} className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="bg-purple-100 text-center py-8 px-6 rounded-full w-80">
-                  <span className="font-extrabold text-gray-800 text-3xl">{item.date}</span>
-                </div>
-                {index < roadmapItems.length - 1 && (
-                  <div className="h-16 border-l-8 border-dashed border-black my-1"></div>
-                )}
-              </div>
-
-              <div className="ml-8 mt-3">
-                <h3 className={`text-3xl font-extrabold ${item.titleColor}`}>
-                  {item.title}
-                </h3>
-                {item.subtitle && (
-                  <h3 className={`text-3xl font-bold ${item.subtitleColor}`}>
-                    {item.subtitle}
-                  </h3>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="hidden md:block w-full  mb-16">
+      <img src={road} alt="road" className="w-full" />
     </div>
 
     {/* Mobile View */}
-    <div className="md:hidden">
-
-    <MobRoadmap />
+    <div className="md:hidden mb-16">
+          <img src={mobroad} alt="road" className="w-full" />
+    
     </div>
     </>
   );
