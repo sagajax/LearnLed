@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <img src={Logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16" />
           <div className="flex flex-col">
-            <span className="text-black font-bold text-lg md:text-xl">
+            <span className="text-[#7BD28E] font-bold text-lg md:text-xl">
               Learn
             </span>
             <span className="text-[#9747FF] font-bold text-lg md:text-xl">

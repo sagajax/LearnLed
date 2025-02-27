@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ele from "/ele.svg";
 import Circles from "./Circles";
+// Remove the next/font import since we're using standard React
 
 export default function BenefitsSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -9,19 +10,32 @@ export default function BenefitsSection() {
     setIsLoaded(true);
   }, []);
 
+  // Add the Inter font using useEffect to inject it into the document head
+  useEffect(() => {
+    // Add Google Fonts link to document head
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    
+    return () => {
+      // Clean up on component unmount
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
-    <div className=" bg-white p-2 mb-8 sm:mb-15 sm:p-4 md:p-8 ">
+    <div className="bg-white p-2 mb-8 sm:mb-15 sm:p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="flex  sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
+        <div className="flex sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
           <div className="flex flex-col items-center">
-            <h1 className="font-inter text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
+            <h1 className="font-['Inter'] text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
               <span className="text-purple-500">Benefits</span>
-              <span className="text-black ml-2 font-thin">of Enrollment</span>
+              <span className="text-black ml-2">of Enrollment</span>
             </h1>
-            <div className="w-32 sm:w-40 md:w-48 h-1 bg-purple-500 mt-2 rounded-full"></div>
           </div>
-          <div className=" sm:ml-4 sm:mt-0">
+          <div className="sm:ml-4 sm:mt-0">
             <img
               src={ele}
               alt="Illustration"
@@ -40,10 +54,10 @@ export default function BenefitsSection() {
             <div className="grid grid-cols-2 gap-2 sm:gap-4">
               {/* Box 1: Flexible payment methods - Circles in bottom-right */}
               <div className="relative overflow-hidden rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-purple-200 group">
-                <div className="absolute inset-0  rounded-full"></div>
+                <div className="absolute inset-0 rounded-full"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#fefeff] to-[#e6dcfa] opacity-70 rounded-full group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-2 sm:p-4 md:p-6 lg:p-8 flex items-center justify-center h-24 sm:h-32 md:h-48 lg:h-64 rounded-full z-20">
-                  <h3 className=" text-xs sm:text-lg md:text-3xl lg:text-4xl  text-center group-hover:scale-105 transition-transform duration-300">
+                  <h3 className="font-['Inter'] text-xs sm:text-lg md:text-3xl lg:text-4xl text-center group-hover:scale-105 transition-transform duration-300">
                     Flexible payment
                     <br className="hidden sm:block" />
                     methods
@@ -56,10 +70,10 @@ export default function BenefitsSection() {
 
               {/* Box 2: Anonymous login - Circles in bottom-left */}
               <div className="relative overflow-hidden rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-purple-200 group">
-                <div className="absolute inset-0  rounded-full"></div>
+                <div className="absolute inset-0 rounded-full"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#fefeff] to-[#e6dcfa] opacity-70 rounded-full group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-2 sm:p-4 md:p-6 lg:p-8 flex items-center justify-center h-24 sm:h-32 md:h-48 lg:h-64 rounded-full z-20">
-                  <h3 className=" text-xs sm:text-lg md:text-3xl lg:text-4xl  text-center group-hover:scale-105 transition-transform duration-300">
+                  <h3 className="font-['Inter'] text-xs sm:text-lg md:text-3xl lg:text-4xl text-center group-hover:scale-105 transition-transform duration-300">
                     Anonymous login <br className="hidden sm:block" />
                     through web3 wallet
                   </h3>
@@ -71,10 +85,10 @@ export default function BenefitsSection() {
 
               {/* Box 3: Immutable certifications - Circles in top-right */}
               <div className="relative overflow-hidden rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-purple-200 group">
-                <div className="absolute inset-0  rounded-full"></div>
+                <div className="absolute inset-0 rounded-full"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#fefeff] to-[#e6dcfa] opacity-70 rounded-full group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-2 sm:p-4 md:p-6 lg:p-8 flex items-center justify-center h-24 sm:h-32 md:h-48 lg:h-64 rounded-full z-20">
-                  <h3 className=" text-xs sm:text-lg md:text-3xl lg:text-4xl  text-center group-hover:scale-105 transition-transform duration-300">
+                  <h3 className="font-['Inter'] text-xs sm:text-lg md:text-3xl lg:text-4xl text-center group-hover:scale-105 transition-transform duration-300">
                     Immutable
                     <br className="hidden sm:block" />
                     certifications
@@ -87,10 +101,10 @@ export default function BenefitsSection() {
 
               {/* Box 4: Reward based learning - Circles in top-left */}
               <div className="relative overflow-hidden rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-purple-200 group">
-                <div className="absolute inset-0  rounded-full"></div>
+                <div className="absolute inset-0 rounded-full"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#fefeff] to-[#e6dcfa] opacity-70 rounded-full group-hover:opacity-90 transition-opacity duration-300"></div>
                 <div className="relative p-2 sm:p-4 md:p-6 lg:p-8 flex items-center justify-center h-24 sm:h-32 md:h-48 lg:h-64 rounded-full z-20">
-                  <h3 className=" text-xs sm:text-lg md:text-3xl lg:text-4xl  text-center group-hover:scale-105 transition-transform duration-300">
+                  <h3 className="font-['Inter'] text-xs sm:text-lg md:text-3xl lg:text-4xl text-center group-hover:scale-105 transition-transform duration-300">
                     Reward based
                     <br className="hidden sm:block" />
                     learning

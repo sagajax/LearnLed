@@ -49,17 +49,17 @@ const FAQAccordion = () => {
   };
 
   return (
-    <div className=" max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg">
+    <div className=" max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg md:mb-10">
       {/* Centered heading with illustration beside it */}
       <div className="flex justify-center items-center mb-8 relative  w-full">
-        <div className="bg-white px-5 py-2 rounded-full border-2 border-purple-500 shadow-md z-10 mr-3 w-full h-auto">
-          <h2 className="text-lg md:text-xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
+        <div className="bg-white px-5 py-2 rounded-full border-4 border-[#8d4bf6] shadow-md z-10 mr-3  h-auto">
+          <h2 className="text-lg md:text-xl lg:text-3xl xl:text-4xl font-medium tracking-wider">
             Frequently asked{" "}
             <span className="text-[#9747FF] font-bold">Questions</span>
           </h2>
         </div>
-        <div className="flex-shrink-0">
-          <div className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]">
+        <div className="flex-shrink-0 ">
+          <div className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] ">
             <img
               src={f1}
               alt="Question mark illustration"
@@ -69,7 +69,7 @@ const FAQAccordion = () => {
         </div>
       </div>
 
-      <div className="space-y-2 bg-[#F5EEFF] rounded-lg p-4 shadow-xl">
+      <div className="space-y-2 bg-[#F5EEFF] rounded-3xl p-4 shadow-xl md:w-[70%] justify-center mx-auto">
         {faqItems.map((item) => (
           <div
             key={item.id}
