@@ -12,11 +12,12 @@ const MobHero = () => {
         {/* Left Side - Text Content */}
         <div className="w-1/2 pr-2 z-10">
           {/* Purple Headline with specific line break */}
-          <div className="text-purple-600 font-bold mb-3">
-            <div className="text-4xl whitespace-nowrap">
-              Earn <br /> While You
-            </div>
-            <div className="text-4xl">Learn!</div>
+          <div className="text-2xl font-bold mb-3">
+            <h1>
+              <span className="text-[#7BD28E]">EARN </span>
+              WHILE YOU <br></br>{" "}
+              <span className="text-[#9747FF]">LEARN!</span>
+            </h1>
           </div>
 
           {/* Gray Subtext - now with first line as nowrap */}
@@ -45,7 +46,7 @@ const MobHero = () => {
         />
       </div>
       <div className="w-full flex justify-center p-4">
-        <button className="bg-green-500 text-white px-6 py-2 rounded-md text-sm">
+        <button className="bg-[#7BD28E] text-white px-6 py-2 rounded-md text-sm">
           Start Learning
         </button>
       </div>
