@@ -19,8 +19,8 @@ export default function Navbar() {
           <div className="w-12 h-12 md:w-16 md:h-16">
             <img src={Logo} alt="Logo" className="w-full h-full" />
           </div>
-          <div className="flex ">
-            <span className="text-black font-bold text-lg md:text-xl">Learn</span>
+          <div className="flex flex-col r">
+            <span className="text-black font-bold text-lg md:text-xl">Learn </span>
             <span className="text-[#9747FF] font-bold text-lg md:text-xl">Ledger</span>
           </div>
         </div>
