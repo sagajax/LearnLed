@@ -5,7 +5,7 @@ import h2 from "/h2.svg";
 
 const MobHero = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white mt-20">
       <Navbar />
 
       <div className="p-4 flex flex-row items-center min-h-[225px] overflow-hidden">
