@@ -3,13 +3,10 @@ import Plane from "/plane.svg";
 
 export default function Footer() {
   const navigationLinks = [
-    { name: "Pricing", href: "#" },
-    { name: "About us", href: "#" },
-    { name: "Features", href: "#" },
-    { name: "Help Center", href: "#" },
-    { name: "Contact us", href: "#" },
-    { name: "FAQs", href: "#" },
-    { name: "Careers", href: "#" },
+    { name: "Home", href: "#" },
+    { name: "Product", href: "#" },
+    { name: "Docs", href: "#" },
+    { name: "WhiteBoard", href: "#" },
   ];
 
   const socialIcons = [
@@ -37,98 +34,63 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white ">
       {/* Desktop Footer - Hidden on mobile */}
-      <div className="hidden md:block ">
-        {/* Top section with logo, contact info, and newsletter */}
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between">
-            {/* Logo and description - Left side */}
-            <div className="mb-8 md:mb-0 md:w-1/3">
-              <div className="flex items-center mb-2">
+      <div className="bg-gray-900 text-white hidden md:block">
+      <div className="container mx-auto px-4 py-6">
+        {/* Top section with logo and description */}
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
+          {/* Logo and description - Left side */}
+          <div className="mb-8 md:mb-0 md:w-1/2">
+            <div className="flex items-center mb-2">
+              <div className="mr-2">
+                {/* Logo placeholder - styled like your purple/green logo */}
                 <img
-                  src={Logo}
-                  alt="Learn Ledger Logo"
-                  className="h-10 w-10 mr-2"
-                />
-                <div>
-                  <h2 className="text-xl font-bold">Learn</h2>
-                  <h2 className="text-xl font-bold text-purple-500">Ledger</h2>
-                </div>
+              src={Logo}
+              alt="Learn Ledger Logo"
+              className="h-16 w-16 mr-2 object-contain"
+            />
               </div>
-              <p className="text-sm text-gray-400 mt-2">
-                Ledge Learnner is a cutting-edge platform where users can learn
-                industry-relevant courses and earn crypto rewards upon
-                completion. Gain valuable skills, earn certifications, and get
-                rewarded while advancing your career!
-              </p>
-            </div>
-
-            {/* Right side - Contact Info and Newsletter */}
-            <div className="md:w-2/3 md:flex md:flex-col md:items-end">
-              {/* Contact Info */}
-              <div className="flex flex-col md:flex-row md:justify-end md:space-x-8 mb-8">
-                <div className="flex items-center mb-4 md:mb-0">
-                  <svg
-                    className="h-5 w-5 text-purple-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="ml-2 text-gray-400">Location</span>
-                </div>
-
-                <div className="flex items-center mb-4 md:mb-0">
-                  <svg
-                    className="h-5 w-5 text-purple-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <span className="ml-2 text-gray-400">mail@gmail.com</span>
-                </div>
-
-                <div className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-purple-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  <span className="ml-2 text-gray-400">+91 1234567890</span>
-                </div>
-              </div>
-
-              {/* Newsletter Section */}
-              <div className="md:flex md:items-center">
-                <h3 className="text-base font-medium mr-4 mb-2 md:mb-0">
-                  Subscribe to our newsletter
-                </h3>
-                <div className="flex">
-                  <input
-                    type="email"
-                    placeholder="Input your email"
-                    className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-64 focus:outline-none"
-                  />
-                  <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-r-md transition-colors">
-                    Subscribe
-                  </button>
-                </div>
+              <div>
+                <h2 className="text-xl font-bold">Learn</h2>
+                <h2 className="text-xl font-bold text-purple-500">Ledger</h2>
               </div>
             </div>
+            <p className="text-sm text-gray-400 mt-2 max-w-md">
+              Ledge Learner is a cutting-edge platform where users can learn
+              industry-relevant courses and earn crypto rewards upon
+              completion. Gain valuable skills, earn certifications, and get
+              rewarded while advancing your career!
+            </p>
+          </div>
+
+          {/* Social icons in purple circle on right */}
+          <div className="bg-indigo-900 rounded-full p-4 flex items-center space-x-4">
+            {/* Telegram icon */}
+            <a href="#" className="bg-white p-3 rounded-full hover:bg-gray-100 transition-colors">
+              <svg className="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            </a>
+            
+            {/* Twitter/X icon */}
+            <a href="#" className="bg-white p-3 rounded-full hover:bg-gray-100 transition-colors">
+              <svg className="h-5 w-5 text-gray-900" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            
+            {/* Discord icon */}
+            <a href="#" className="bg-white p-3 rounded-full hover:bg-gray-100 transition-colors">
+              <svg className="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path>
+              </svg>
+            </a>
           </div>
         </div>
 
         {/* Main navigation */}
         <div className="border-t border-gray-800 py-4">
-          <div className="container mx-auto px-4">
-            <nav className="flex flex-wrap justify-center space-x-6">
+          <div className="container mx-auto">
+            <nav className="flex justify-center space-x-32">
               {navigationLinks.map((link) => (
                 <a
                   key={link.name}
@@ -142,78 +104,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section with Copyright and Social */}
-        <div className="border-t border-gray-800 py-4">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            {/* Language selector on left */}
-            <div className="mb-4 md:mb-0 order-2 md:order-1">
-              <select className="bg-gray-800 text-white border border-gray-700 rounded px-2 py-1 text-sm">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-              </select>
-            </div>
-
-            {/* Copyright centered */}
-            <p className="text-gray-400 text-sm mb-4 md:mb-0 order-1 md:order-2">
-              © 2025 Learn Leadger Limited. All Rights Reserved.
+        {/* Bottom Section with Copyright */}
+        <div className="border-t border-gray-800 py-4 mt-4">
+          <div className="container mx-auto text-center">
+            {/* Copyright */}
+            <p className="text-gray-400 text-sm">
+              © 2025 Learn Ledger Limited. All Rights Reserved.
             </p>
-
-            {/* Social icons on right */}
-            <div className="flex space-x-4 order-3">
-              {socialIcons.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="text-blue-400 hover:text-white transition-colors"
-                  aria-label={social.name}
-                >
-                  {social.icon === "twitter" && (
-                    <svg
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                  )}
-                  {social.icon === "facebook" && (
-                    <svg
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  )}
-                  {social.icon === "linkedin" && (
-                    <svg
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                  )}
-                  {social.icon === "youtube" && (
-                    <svg
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                  )}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
       {/* Mobile Footer - Shown only on mobile */}
       <div className="md:hidden bg-gray-900 w-full px-4 py-6 overflow-x-hidden">
