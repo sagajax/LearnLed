@@ -13,7 +13,7 @@ export default function BenefitsSection() {
     <div className=" bg-white p-2 sm:p-4 md:p-8 ">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
+        <div className="flex  sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
       <div className="flex flex-col items-center">
         <h1 className="font-inter text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
           <span className="text-purple-500">Benefits</span>
@@ -21,7 +21,7 @@ export default function BenefitsSection() {
         </h1>
         <div className="w-32 sm:w-40 md:w-48 h-1 bg-purple-500 mt-2 rounded-full"></div>
       </div>
-      <div className="hidden sm:block sm:ml-4 sm:mt-0">
+      <div className=" sm:ml-4 sm:mt-0">
         <img
           src={ele}
           alt="Illustration"
