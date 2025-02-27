@@ -10,7 +10,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white w-full md:shadow-[0_75px_150px_2px_rgba(0,0,0,0.25)] shadow-[#9747ff48] p-4 fixed top-0 z-[1000]">
+    <nav className="bg-white w-full md:shadow-[0_75px_150px_2px_rgba(0,0,0,0.25)] shadow-[#9747ff48] p-1 fixed top-0 z-[1000]">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo Section */}
         <div className="flex items-center gap-4">
@@ -44,9 +44,9 @@ export default function Navbar() {
         </div>
 
         {/* Social Icons - Desktop */}
-        <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center justify-around bg-[#eadaff] p-2 rounded-full py-3">
+        <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center justify-around bg-[#eadaff] p-2 rounded-full ">
           {[FaTelegram, FaXTwitter, FaDiscord].map((Icon, index) => (
-            <div key={index} className="bg-white shadow-md p-2 rounded-full w-10 h-10 lg:w-12 lg:h-12">
+            <div key={index} className="bg-white shadow-md  rounded-full w-10 h-10 lg:w-12 lg:h-12">
               <div className="flex items-center justify-center w-full h-full">
                 <a href="#" className="text-gray-600 hover:text-[#6B46C1] transition-colors">
                   <Icon size={24} color="#6B46C1" />
