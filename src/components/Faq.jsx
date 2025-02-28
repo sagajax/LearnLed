@@ -54,7 +54,7 @@ const FAQAccordion = () => {
       <div className="flex justify-center items-center mb-8 relative w-full">
         <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-full border-4 border-[#8d4bf6] shadow-md z-10">
           <h2 className="text-lg md:text-xl lg:text-3xl xl:text-4xl font-medium tracking-wider">
-            FA<span className="text-[#9747FF] font-bold">Qs</span>
+            FA<span className="text-black font-bold">Qs</span>
           </h2>
         </div>
         <div className="absolute left-[calc(50%+100px)] md:left-[calc(50%+130px)] lg:left-[calc(50%+160px)] transform -translate-x-1/2 w-[60px] h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px]">

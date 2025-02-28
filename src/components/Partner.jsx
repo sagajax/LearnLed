@@ -10,7 +10,7 @@ import o7 from "/o7.svg";
 
 export default function Partner() {
   // Array of your imported images
-  const partnerImages = [o1, o2, o5, o4, o5, o6, o7];
+  const partnerImages = [o1, o2, o5, o4, o5, o6, o7, o4, o5, o6, o7];
   const partnerImagesMobile = [o1, o2, o5, o6, o7];
   return (
     <div className="bg-white mt-10 px-4 md:px-0">
@@ -28,7 +28,7 @@ export default function Partner() {
       <div className="py-6 md:py-10">
         {/* Hidden on mobile, visible on medium screens and up */}
         <div className="hidden md:block">
-          <Marquee speed={40} gradientWidth={0} className="space-x-20">
+          <Marquee speed={60} gradientWidth={0} className="space-x-10">
             {partnerImages.map((img, index) => (
               <img key={index} src={img} alt="" className="mx-4" />
             ))}
