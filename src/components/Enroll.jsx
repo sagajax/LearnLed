@@ -13,11 +13,11 @@ export default function Enroll() {
           {/* Heading */}
           <div className="flex flex-col items-center justify-center mb-10">
             <div className="flex space-x-2 text-center justify-center items-center">
-              <h1 className="text-xl lg:text-5xl font-inter font-light text-black text-center">
-                USER
+              <h1 className="text-5xl lg:text-5xl font-inter font-light text-black text-center">
+                User
               </h1>
-              <h1 className="text-xl lg:text-5xl font-inter font-semibold text-[#9747FF] text-center">
-                ENROLLMENT
+              <h1 className="text-5xl lg:text-5xl font-inter font-semibold text-[#9747FF] text-center">
+                Enrollment
               </h1>
             </div>
           </div>
@@ -131,11 +131,11 @@ export default function Enroll() {
       <div className=" md:hidden">
         <div className="flex flex-col items-center justify-center mb-10">
           <div className="flex space-x-2 text-center justify-center items-center">
-            <h1 className="text-xl lg:text-5xl font-inter font-light text-black text-center">
-              USER
+            <h1 className="text-3xl  font-inter font-light text-black text-center">
+              User
             </h1>
-            <h1 className="text-xl lg:text-5xl font-inter font-semibold text-[#9747FF] text-center">
-              ENROLLMENT
+            <h1 className="text-3xl  font-inter font-semibold text-[#9747FF] text-center">
+              Enrollment
             </h1>
           </div>
         </div>

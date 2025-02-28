@@ -49,25 +49,24 @@ const FAQAccordion = () => {
   };
 
   return (
-    <div className=" max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg md:mb-10">
-      {/* Centered heading with illustration beside it */}
-      <div className="flex justify-center items-center mb-8 relative  w-full">
-        <div className="bg-white px-5 py-2 rounded-full border-4 border-[#8d4bf6] shadow-md z-10 mr-3  h-auto">
+    <div className="max-w-6xl mx-auto px-4 py-6 bg-white rounded-lg md:mb-10">
+      {/* Properly centered heading with illustration to the right */}
+      <div className="flex justify-center items-center mb-8 relative w-full">
+        <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-full border-4 border-[#8d4bf6] shadow-md z-10">
           <h2 className="text-lg md:text-xl lg:text-3xl xl:text-4xl font-medium tracking-wider">
-            Frequently asked{" "}
-            <span className="text-[#9747FF] font-bold">Questions</span>
+            FA<span className="text-[#9747FF] font-bold">Qs</span>
           </h2>
         </div>
-        <div className="flex-shrink-0 ">
-          <div className="w-[60px] h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px] ">
-            <img
-              src={f1}
-              alt="Question mark illustration"
-              className="w-full h-full"
-            />
-          </div>
+        <div className="absolute left-[calc(50%+100px)] md:left-[calc(50%+130px)] lg:left-[calc(50%+160px)] transform -translate-x-1/2 w-[60px] h-[60px] md:w-[100px] md:h-[100px] lg:w-[150px] lg:h-[150px]">
+          <img
+            src={f1}
+            alt="Question mark illustration"
+            className="w-full h-full"
+          />
         </div>
       </div>
+      {/* Spacer to ensure proper layout with absolute positioning */}
+      <div className="h-20 md:h-24 lg:h-32"></div>
 
       <div className="space-y-2 bg-[#F5EEFF] rounded-3xl p-4 shadow-xl md:w-[70%] justify-center mx-auto">
         {faqItems.map((item) => (
