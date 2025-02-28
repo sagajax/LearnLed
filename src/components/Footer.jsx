@@ -64,7 +64,7 @@ export default function Footer() {
             </div>
 
             {/* Social icons in purple circle on right */}
-            <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center justify-around bg-[#7241c3] p-2 rounded-full ">
+            <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center justify-around bg-[#7241c3] p-2 rounded-full mr-[7%] ">
                       {[FaTelegram, FaXTwitter, FaDiscord].map((Icon, index) => (
                         <div
                           key={index}

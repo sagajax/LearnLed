@@ -66,7 +66,7 @@ const FAQAccordion = () => {
         </div>
       </div>
       {/* Spacer to ensure proper layout with absolute positioning */}
-      <div className="h-20 md:h-24 lg:h-32"></div>
+      <div className="h-10 "></div>
 
       <div className="space-y-2 bg-[#F5EEFF] rounded-3xl p-4 shadow-xl md:w-[70%] justify-center mx-auto">
         {faqItems.map((item) => (
