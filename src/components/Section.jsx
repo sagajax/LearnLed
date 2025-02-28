@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import ele from "/ele.svg";
 import Circles from "./Circles";
-// Remove the next/font import since we're using standard React
 
 export default function BenefitsSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,11 +12,12 @@ export default function BenefitsSection() {
   // Add the Inter font using useEffect to inject it into the document head
   useEffect(() => {
     // Add Google Fonts link to document head
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
-    link.rel = 'stylesheet';
+    const link = document.createElement("link");
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+    link.rel = "stylesheet";
     document.head.appendChild(link);
-    
+
     return () => {
       // Clean up on component unmount
       document.head.removeChild(link);
@@ -27,20 +27,18 @@ export default function BenefitsSection() {
   return (
     <div className="bg-white p-2 mb-8 sm:mb-15 sm:p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
-        <div className="flex sm:flex-row justify-center items-center mb-4 sm:mb-6 md:mb-12">
-          <div className="flex flex-col items-center">
-            <h1 className="font-['Inter'] text-2xl sm:text-3xl md:text-5xl font-bold flex flex-wrap justify-center text-center">
+        {/* Header Section - Truly centered title with image to the right */}
+        <div className="flex mb-4 sm:mb-6 md:mb-12 relative">
+          {/* Absolute center title */}
+          <div className="w-full flex justify-center items-center">
+            <h1 className="font-['Inter'] text-2xl sm:text-3xl md:text-5xl font-bold">
               <span className="text-purple-500">Benefits</span>
               <span className="text-black ml-2">of Enrollment</span>
             </h1>
           </div>
-          <div className="sm:ml-4 sm:mt-0">
-            <img
-              src={ele}
-              alt="Illustration"
-              className="h-16 sm:h-32 md:h-64"
-            />
+          {/* Image positioned at the right */}
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+            <img src={ele} alt="Illustration" className="h-16 sm:h-32 md:h-64" />
           </div>
         </div>
 
