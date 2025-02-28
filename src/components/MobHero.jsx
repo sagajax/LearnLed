@@ -27,7 +27,7 @@ const MobHero = () => {
           </div>
           
           {/* Gray Subtext - now with first line as nowrap */}
-          <div className="text-gray-500 mb-4 text-sm">
+          <div className="text-gray-500 mb-4 text-xs mt-10">
             <div className="whitespace-nowrap">Get Up to 25% cashback in</div>
             <div>EDU tokens</div>
           </div>
