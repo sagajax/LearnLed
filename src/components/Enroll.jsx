@@ -1,7 +1,4 @@
 import React from "react";
-import climb from "/e1.svg";
-import video from "/video.svg";
-import pi from "/pi.svg";
 import MobEnroll from "/MobEnroll.svg";
 import enroll from "/enroll.svg";
 
@@ -143,6 +140,7 @@ export default function Enroll() {
           src={MobEnroll}
           alt="Enroll"
           className="w-full h-full object-cover"
+          draggable="false"
         />
       </div>
     </>
