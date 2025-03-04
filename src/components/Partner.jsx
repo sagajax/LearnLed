@@ -10,7 +10,7 @@ import o7 from "/o7.svg";
 
 export default function Partner() {
   // Array of your imported images
-  const partnerImages = [o1, o2, o5, o4, o5, o6, o7, o4, o5, o6, o7];
+  const partnerImages = [o1, o2, o5, o6, o7,o1, o2, o5, o6, o7];
   const partnerImagesMobile = [o1, o2, o5, o6, o7];
   return (
     <div className="bg-white mt-10 px-4 md:px-0">
