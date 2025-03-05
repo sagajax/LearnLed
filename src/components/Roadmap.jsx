@@ -6,7 +6,7 @@ import mobroad from "/mobroad.svg";
 export default function Roadmap() {
   return (
     <>
-      <div className="hidden md:block w-full mb-16">
+      <div className="hidden md:block w-full mb-16 max-w-[1500px] mx-auto">
         <img src={road} alt="road" className="w-full" draggable="false" />
       </div>
       

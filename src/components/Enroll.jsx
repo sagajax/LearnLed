@@ -5,7 +5,7 @@ import enroll from "/enroll.svg";
 export default function Enroll() {
   return (
     <>
-      <div className="hidden md:block h-auto w-full bg-white py-12 relative overflow-hidden">
+      <div className="hidden md:block h-auto w-full bg-white py-12 relative overflow-hidden max-w-[1500px] mx-auto">
         <div className="w-full">
           {/* Heading */}
           <div className="flex flex-col items-center justify-center mb-10">
@@ -125,6 +125,7 @@ export default function Enroll() {
           </div>
         </div>
       </div>
+
       <div className=" md:hidden">
         <div className="flex flex-col items-center justify-center mb-10">
           <div className="flex space-x-2 text-center justify-center items-center">

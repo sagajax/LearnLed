@@ -13,7 +13,7 @@ export default function Partner() {
   const partnerImages = [o1, o2, o5, o6, o7,o1, o2, o5, o6, o7];
   const partnerImagesMobile = [o1, o2, o5, o6, o7];
   return (
-    <div className="bg-white mt-10 px-4 md:px-0">
+    <div className="bg-white mt-10 px-4 md:px-0 max-w-[1500px] mx-auto">
       {/* Title section - kept as in your original */}
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center space-x-2">
